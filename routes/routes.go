@@ -7,7 +7,7 @@ import (
 )
 
 func AddRoutes(router *gin.RouterGroup) {
-	router.GET("/insert-fields", controllers.DisplayInsertionModule)
+	router.GET("/", controllers.DisplayInsertionModule)
 	router.GET("/display-items", controllers.DisplayItems)
 	router.GET("/admin-settings", controllers.GetAdminSettings)
 	api := router.Group("/api")
