@@ -55,6 +55,7 @@ func InsertItems(c *gin.Context) {
 		})
 		return
 	}
+	fmt.Println("inserted records")
 	c.JSON(http.StatusOK, gin.H{
 		"status":  "success",
 		"message": "successfully inserted records",
